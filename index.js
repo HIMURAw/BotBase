@@ -1,22 +1,8 @@
-const { client, GatewayIntentBits } = require('discord.js');
 const config = require('./config.js');
+require('deploy-commands.js');
 
-const BOT = new Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildMembers,
-        GatewayIntentBits.GuildMessageReactions,
-        GatewayIntentBits.GuildEmojisAndStickers,
-    ],
-});
+const { CustomClient } = require('./structures/CustomClient.js');
 
+const Bot = new CustomClient();
 
-
-
-
-
-
-BOT.login(config.TOKEN).then(() => {
-    console.log('Bot is online!');
-});
+Bot.start();
