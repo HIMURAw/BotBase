@@ -1,0 +1,23 @@
+{
+  "name": "botbase",
+  "version": "1.0.0",
+  "description": "Discord v14 Bot Core",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HIMURAw/BotBase.git"
+  },
+  "author": "HIMURA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HIMURAw/BotBase/issues"
+  },
+  "homepage": "https://github.com/HIMURAw/BotBase#readme",
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "nodemodule": "^0.3.0"
+  }
+}
