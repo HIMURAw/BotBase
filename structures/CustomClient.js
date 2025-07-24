@@ -1,5 +1,5 @@
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
-const { loadCommands } = require('../handlers/commandHandler');
+const { loadSlashCommands } = require('../handlers/commandHandler');
 const { loadEvents } = require('../handlers/eventHandler');
 const config = require('../config.js');
 
@@ -19,7 +19,7 @@ class CustomClient extends Client {
     }
 
     async start() {
-        loadCommands(this);
+        loadSlashCommands(this);
         loadEvents(this);
         this.login(this.config.TOKEN);
     }
